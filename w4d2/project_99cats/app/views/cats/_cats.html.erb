@@ -1,0 +1,42 @@
+
+<table style="font-family: cursive, sans-serif">
+  <thead >
+    <tr align="left" >
+      <th><div style="width: 100px" >Thing</div></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name: </td>
+      <td><%= cat.name %></td>
+    </tr>
+    <tr>
+      <td>Color: </td>
+      <td><%= cat.color %></td>
+    </tr>
+    <tr>
+      <td>Age: </td>
+      <td><%= cat.birth_date %></td>
+    </tr>
+    <tr>
+      <td>Birthdate: </td>
+      <td><%= cat.birth_date %></td>
+    </tr>
+    <tr>
+      <td>Sex: </td>
+      <td><%= cat.sex %></td>
+    </tr>
+    <tr>
+      <td>Description: </td>
+      <td><%= cat.description %></td>
+    </tr>
+  </tbody>
+</table>
+<% if type == :show %>
+<%= link_to 'Show Cat Index', cats_url%>
+<% else %>
+<%= link_to 'Show Cat Detail', cat_url(cat.id)%>
+<% end %>
+<br>
+<br>

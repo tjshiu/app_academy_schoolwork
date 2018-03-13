@@ -1,0 +1,66 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-nav > ul > li {
+  // search
+  margin: 10px;
+  padding: 10px;
+}
+
+.right-nav > ul > li {
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+
+}
+
+// subscribe, log in
+.right-nav > ul > li > button {
+  color: white;
+  background: $light-blue;
+  font-weight: bold;
+  border-radius: 7% 7%;
+  padding: 5px;
+}
+
+.right-nav > ul > li > button:hover {
+  color: white;
+  background: $dark-blue;
+  font-weight: bold;
+}
+
+// gear
+// .right-nav > ul > li:last-of-type {
+//   font-size: 20px;
+// }
+
+// sections, search, gear
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+  background-color: $lightest-gray;
+  border-radius: 7% 7%;
+  cursor: pointer;
+}
+
+.left-nav span:last-of-type{
+
+}
+
+
+
+.right-nav i {
+  padding: 3px;
+  font-size: 20px;
+}
