@@ -1,0 +1,40 @@
+/* PHASE 3: Layout */
+.content {
+  min-height: 200px;
+  width: 900;
+  margin: 0 auto;
+  /* min-width: 900px; */
+  justify-content: center;
+  display: flex;
+  position:  relative;
+}
+.content:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 240px;
+  width: 1px;
+  background: green;
+
+}
+.content:after {
+  display: flex;
+}
+
+.content-main  {
+  min-height: 200px;
+  background-color: pink;
+  width: 620px;
+  float:left;
+  padding: 20px;
+}
+
+.content-sidebar {
+    float: left;
+    /* display: flex; */
+    width: 200px;
+    min-height: 200px;
+    padding: 20px;
+    background-color: lightblue;
+}
