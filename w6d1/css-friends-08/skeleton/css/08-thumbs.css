@@ -1,0 +1,22 @@
+/* PHASE 8: Thumbs */
+.top-9 {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.thumb {
+  /* display: block; */
+  width: 58px;
+  height: 58px;
+  max-width: 10px;
+  position: relative;
+
+  /* margin: 10px; */
+}
+
+.top-9 > li {
+  float: left;
+  width: 60px;
+  margin: 0 0 10px 0;
+}
